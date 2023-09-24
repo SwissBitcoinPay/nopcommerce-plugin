@@ -3,7 +3,7 @@
 namespace Nop.Plugin.Payments.SwissBitcoinPay
 {
     /// <summary>
-    /// Represents settings of BtcPay payment plugin
+    /// Represents settings of SwissBitcoinPay payment plugin
     /// </summary>
     public class SwissBitcoinPaySettings : ISettings
     {
@@ -13,12 +13,12 @@ namespace Nop.Plugin.Payments.SwissBitcoinPay
         public string ApiUrl { get; set; }
 
         /// <summary>
-        /// Your Swiss Bitcoin Pay API Key given in your Swiss Bitcoin Pay dashbord
+        /// Your Swiss Bitcoin Pay API Key given in your Swiss Bitcoin Pay dashboard
         /// </summary>
         public string ApiKey { get; set; }
 
         /// <summary>
-        /// The Api Secret value set in your Swiss Bitcoin Pay dashbord
+        /// The Api Secret value set in your Swiss Bitcoin Pay dashboard
         /// </summary>
         public string ApiSecret { get; set; }
 

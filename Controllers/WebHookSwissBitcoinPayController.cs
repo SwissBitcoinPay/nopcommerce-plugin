@@ -52,7 +52,7 @@ namespace Nop.Plugin.Payments.SwissBitcoinPay.Controllers
                 dynamic jsonData = JsonConvert.DeserializeObject(jsonStr);
 
                 step++;
-                var SwissBtcPaySecret = SwissBtcPaySig.Split('=')[1];
+                var SwissSecret = SwissBtcPaySig.Split('=')[1];
 
                 step++;
                 string Description = jsonData.description;
@@ -77,7 +77,7 @@ namespace Nop.Plugin.Payments.SwissBitcoinPay.Controllers
                 step++;
                 var swissBitcoinPaySettings = await _settingService.LoadSettingAsync<SwissBitcoinPaySettings>(StoreID);
 
-                if (!SwissBitcoinPayService.CheckSecretKey(swissBitcoinPaySettings.ApiSecret, jsonStr, SwissBtcPaySecret))
+                if (!SwissBitcoinPayService.CheckSecretKey(swissBitcoinPaySettings.ApiSecret, jsonStr, SwissSecret))
                     throw (null);
                 var order = await _orderService.GetOrderByGuidAsync(new Guid(OrderGuid)) ?? throw (null);
                 step++;

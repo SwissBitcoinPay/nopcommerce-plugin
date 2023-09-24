@@ -7,5 +7,5 @@
   "Author": "Nisaba Solutions",
   "DisplayOrder": 1,
   "FileName": "Nop.Plugin.Payments.SwissBitcoinPay.dll",
-  "Description": "This plugin enables Bitcoin payment with Swiss Bitcoin Pay"
+  "Description": "This plugin enable Bitcoin Onchain/Lightning payments with Swiss Bitcoin Pay"
 }
