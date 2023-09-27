@@ -103,7 +103,8 @@ namespace Nop.Plugin.Payments.SwissBitcoinPay
                 ["Plugins.Payments.SwissBitcoinPay.AdditionalFeePercentage"] = "Additional fee. Use percentage",
                 ["Plugins.Payments.SwissBitcoinPay.AdditionalFeePercentage.Hint"] = "Determines whether to apply a percentage additional fee to the order total. If not enabled, a fixed value is used.",
                 ["Plugins.Payments.SwissBitcoinPay.Instructions"] = "Enter your data below to configure this plugin :",
-                ["Plugins.Payments.SwissBitcoinPay.PaymentMethodDescription"] = "Pay in bitcoins with Swiss Bitcoin Pay",
+                ["Plugins.Payments.SwissBitcoinPay.PaymentMethodDescription"] = "Pay in Bitcoin with Swiss Bitcoin Pay",
+
                 ["Plugins.Payments.SwissBitcoinPay.PaymentMethodDescription2"] = "After completing the order you will be redirected to Swiss Bitcoin Pay, where you can make the Bitcoin payment for your order.",
                 ["Plugins.Payments.SwissBitcoinPay.APIUrl"] = "Swiss Bitcoin Pay API Url",
                 ["Plugins.Payments.SwissBitcoinPay.ApiKey"] = "API Key",
