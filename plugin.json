@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Payment methods",
+  "FriendlyName": "Swiss Bitcoin Pay",
+  "SystemName": "Payments.SwissBitcoinPay",
+  "Version": "1.01",
+  "SupportedVersions": [ "4.60" ],
+  "Author": "Nisaba Solutions",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Payments.SwissBitcoinPay.dll",
+  "Description": "This plugin enable Bitcoin Onchain/Lightning payments with Swiss Bitcoin Pay"
+}

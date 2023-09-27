@@ -1,0 +1,80 @@
+﻿@model Nop.Plugin.Payments.SwissBitcoinPay.Models.ConfigurationModel
+@{
+    Layout = "_ConfigurePlugin";
+}
+
+@await Component.InvokeAsync(typeof(StoreScopeConfigurationViewComponent))
+
+<form asp-controller="PaymentSwissBitcoinPay" asp-action="Configure" method="post">
+    <div class="cards-group">
+        <div class="card card-default">
+            <div class="card-body">
+                <p>@T("Plugins.Payments.SwissBitcoinPay.Instructions")</p>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <nop-override-store-checkbox asp-for="OverrideForStore" asp-input="OverrideForStore" asp-store-scope="@Model.ActiveStoreScopeConfiguration" />
+                    </div>
+                </div>
+                <div style="display:none">
+                    <div class="col-md-3">
+                        <nop-label asp-for="ApiUrl" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ApiUrl" />
+                        <span asp-validation-for="ApiUrl"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <nop-label asp-for="ApiKey" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ApiKey" />
+                        <span asp-validation-for="ApiKey"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <nop-label asp-for="ApiSecret" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="ApiSecret" />
+                        <span asp-validation-for="ApiSecret"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AcceptOnChain" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AcceptOnChain" />
+                        <span asp-validation-for="AcceptOnChain"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AdditionalFee" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFee" />
+                        <span asp-validation-for="AdditionalFee"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <nop-label asp-for="AdditionalFeePercentage" />
+                    </div>
+                    <div class="col-md-9">
+                        <nop-editor asp-for="AdditionalFeePercentage" />
+                        <span asp-validation-for="AdditionalFeePercentage"></span>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-9 offset-md-3">
+                        <button type="submit" name="save" class="btn btn-primary">@T("Admin.Common.Save")</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
