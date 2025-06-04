@@ -3,7 +3,7 @@
   "FriendlyName": "Swiss Bitcoin Pay",
   "SystemName": "Payments.SwissBitcoinPay",
   "Version": "1.11",
-  "SupportedVersions": [ "4.90" ],
+  "SupportedVersions": [ "4.80" ],
   "Author": "Nisaba Solutions",
   "DisplayOrder": 1,
   "FileName": "Nop.Plugin.Payments.SwissBitcoinPay.dll",
