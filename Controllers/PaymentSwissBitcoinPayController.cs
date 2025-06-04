@@ -14,7 +14,7 @@ using NUglify.Helpers;
 namespace Nop.Plugin.Payments.SwissBitcoinPay.Controllers
 {
     [AuthorizeAdmin]
-    [Area(AreaNames.Admin)]
+    [Area(AreaNames.ADMIN)]
     [AutoValidateAntiforgeryToken]
     public class PaymentSwissBitcoinPayController : BasePaymentController
     {
@@ -49,7 +49,7 @@ namespace Nop.Plugin.Payments.SwissBitcoinPay.Controllers
 
         public async Task<IActionResult> Configure()
         {
-            if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.ManagePaymentMethods))
+            if (!await _permissionService.AuthorizeAsync(StandardPermission.Configuration.MANAGE_PAYMENT_METHODS))
                 return AccessDeniedView();
 
             //load settings for a chosen store scope
@@ -73,7 +73,7 @@ namespace Nop.Plugin.Payments.SwissBitcoinPay.Controllers
         [HttpPost]
         public async Task<IActionResult> Configure(ConfigurationModel model)
         {
-            if (!await _permissionService.AuthorizeAsync(StandardPermissionProvider.ManagePaymentMethods))
+            if (!await _permissionService.AuthorizeAsync(StandardPermission.Configuration.MANAGE_PAYMENT_METHODS))
                 return AccessDeniedView();
 
             if (!ModelState.IsValid)

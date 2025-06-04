@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <Copyright>Copyright © Nisaba Solutions</Copyright>
     <Company>Swiss Bitcoin Pay</Company>
     <Authors>Nisaba Solutions</Authors>
     <PackageLicenseUrl>https://swiss-bitcoin-pay.ch/</PackageLicenseUrl>
-    <PackageProjectUrl>https://www.nisaba.solutions</PackageProjectUrl>
+    <PackageProjectUrl>https://www.nisaba-solutions.com</PackageProjectUrl>
     <RepositoryType>Git</RepositoryType>
     <OutputPath>..\..\Presentation\Nop.Web\Plugins\Payments.SwissBitcoinPay</OutputPath>
     <OutDir>$(OutputPath)</OutDir>
